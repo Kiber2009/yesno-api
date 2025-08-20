@@ -1,7 +1,6 @@
 on:
   push:
   pull_request:
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,7 +9,8 @@ jobs:
         java-version:
           - 17
           - 21
-
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v5
       - name: Set up JDK
