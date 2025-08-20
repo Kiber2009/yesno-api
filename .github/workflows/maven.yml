@@ -1,0 +1,27 @@
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java-version:
+          - 17
+          - 21
+
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ matrix.java-version }}
+          distribution: "temurin"
+          cache: maven
+      - name: Build
+        run: mvn -B package --file pom.xml
+      - name: Update dependency graph
+        uses: advanced-security/maven-dependency-submission-action@v5
+        with:
+          correlator: ${{ github.job }}-${{ matrix.java-version }}
