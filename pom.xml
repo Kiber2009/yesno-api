@@ -9,6 +9,33 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
+    <name>yesno-api</name>
+    <description>Simple API wrapper for yesno.wtf</description>
+    <url>https://github.com/Kiber2009/yesno-api</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Kiber</name>
+            <email>vlaskindv@gmail.com</email>
+            <organization>io.github.kiber2009</organization>
+            <timezone>UTC+3</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/Kiber2009/yesno-api</url>
+        <connection>scm:git:git://github.com/Kiber2009/yesno-api.git</connection>
+        <developerConnection>scm:git:ssh://github.com:Kiber2009/yesno-api.git</developerConnection>
+    </scm>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
