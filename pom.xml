@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <name>yesno-api</name>
-    <description>Simple API wrapper for yesno.wtf</description>
+    <description>Simple Java wrapper for yesno.wtf API</description>
     <url>https://github.com/Kiber2009/yesno-api</url>
 
     <licenses>
